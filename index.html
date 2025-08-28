@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday wish Generator App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-blue-200 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-4xl mx-auto text-center">
+    <div class="animate-bounce mb-8">
+      <img src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d" alt="Birthday Cake" class="w-64 h-64 object-cover mx-auto rounded-full shadow-2xl"/>
+    </div>
+
+    <h1 class="text-6xl font-bold text-purple-600 mb-8 animate-pulse">Happy Birthday!</h1>
+
+    <div id="show-wish" class="bg-white bg-opacity-80 rounded-lg p-8 shadow-xl mb-8">
+      <form class="space-y-4" id="form-data">
+        <input id="get-user-name" type="text" placeholder="Enter birthday person's name" class="w-full px-4 py-2 rounded-md border border-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500"/>
+        <button type="submit" class="bg-purple-600 text-white px-6 py-2 rounded-md hover:bg-purple-700 transform hover:scale-105 transition duration-200">Generate Greeting</button>
+      </form>
+    </div>
+
+    <div class="relative h-40 mb-8">
+      <div class="absolute animate-float left-[10%]">
+        <i class="fa-solid fa-gift text-4xl text-pink-500"></i>
+        <i class="fa-solid fa-cake-candles text-4xl text-purple-500 mt-4 block"></i>
+      </div>
+      <div class="absolute animate-float left-[30%]" style="animation-delay: 0.5s;">
+        <i class="fa-solid fa-gift text-4xl text-pink-500"></i>
+        <i class="fa-solid fa-cake-candles text-4xl text-purple-500 mt-4 block"></i>
+      </div>
+      <div class="absolute animate-float left-[50%]" style="animation-delay: 1s;">
+        <i class="fa-solid fa-gift text-4xl text-pink-500"></i>
+        <i class="fa-solid fa-cake-candles text-4xl text-purple-500 mt-4 block"></i>
+      </div>
+      <div class="absolute animate-float left-[70%]" style="animation-delay: 1.5s;">
+        <i class="fa-solid fa-gift text-4xl text-pink-500"></i>
+        <i class="fa-solid fa-cake-candles text-4xl text-purple-500 mt-4 block"></i>
+      </div>
+      <div class="absolute animate-float left-[90%]" style="animation-delay: 2s;">
+        <i class="fa-solid fa-gift text-4xl text-pink-500"></i>
+        <i class="fa-solid fa-cake-candles text-4xl text-purple-500 mt-4 block"></i>
+      </div>
+    </div>
+
+    <div class="fixed bottom-8 right-8">
+      <audio id="play-audio" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+      <button id="click-audio" class="bg-purple-600 text-white p-4 rounded-full hover:bg-purple-700 transform hover:scale-110 transition duration-200 flex items-center space-x-2">
+        <i id="change-icon" class="fa-solid fa-play text-xl"></i>
+        <i class="fa-solid fa-music text-xl"></i>
+      </button>
+    </div>
+  </div>
+  <script src="java.js"></script>  
+</body>
+</html>
